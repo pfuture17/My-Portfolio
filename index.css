@@ -1,0 +1,633 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quando', serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:hover {
+    color: blue;
+}
+Header {
+    background: url('https://ajmalsadiq.github.io/AAA-Creatives/Img/Banner2.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.headerBody {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* -------------------------------------- */
+.myQ q {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+    width: 90%;
+}
+.myQ q[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.myQ q:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #e02bff;
+   transform-origin: right;
+   transition: 0.5s;
+}
+.myQ q[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+/* -------------------------------------- */
+.me img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 2em ;
+    transition: 0.5s;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.me img[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.me img:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform-origin: center;
+   transition: 0.5s;
+}
+.me img[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+
+/* -------------------------------------- */
+
+.me {
+    width: 30%;
+    margin-top:7% ;
+}
+.me img {
+    width: 100%;
+    border-radius: 50%;
+}
+.headerText {
+    width: 50%;
+    margin-top: 10%;
+    padding: 5px;
+    position: relative;
+    font-size: 2em;
+}
+.headerText h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-size: 2em ;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.headerText h1[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.headerText h1:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #e02bff;
+   transform-origin: right;
+   transition: 0.5s;
+}
+.headerText h1[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+.headerText h4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.headerText h4[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.headerText h4:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb3b;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.headerText h4[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+.headerText a {
+    position: relative;
+    background: #fff;
+    color: #262626;
+    padding: 15px 30px;
+    font-size: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 1s;
+}
+.headerText a:hover {
+    background-color: rgba(211, 211, 211, 0.5);
+}
+
+/* SKILL */
+section .skills {
+    background: url('https://www.agdelta.com/wp-content/uploads/2018/06/website-parallax-background-C.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.skills {
+    position: relative;
+}
+section .skillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+}
+/* ---------------------------------------------------- */
+.skillLogo {
+    width: 13%;
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transition: 0.5s;
+    transform-origin:center;
+    transform: scaleX(0);
+}
+.skillLogo figcaption {
+    width: 100%;
+    padding: 5px;
+}
+.skillLogo[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.skillLogo:before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   
+    transform-origin: right;
+    transition: 0.5s;
+}
+.skillLogo[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+/* ----------------------------------------------------- */
+.skillLogo img {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+
+}
+
+.skills h2 {
+    margin-left: 33%;
+    font-size: 3em;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.skills h2[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.skills h2:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #e02bff;
+   transform-origin: right;
+   transition: 0.5s;
+}
+.skills h2[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+/* -----------------------------------------------------------------Projects----------------------- */
+.videoBox a:hover {
+    color: blue;
+}
+Section .Projects {
+    background: url('https://wallpaperforu.com/wp-content/uploads/2021/02/Wallpaper-Black-And-White-Laptop-Computer-Keyboards-Tech43.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+/* ------------------------------------------------------- */
+.Projects h2 {
+    margin-left: 33%;
+    font-size: 3em;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.Projects h2[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.Projects h2:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #ffeb3b;
+   transform-origin: right;
+   transition: 0.5s;
+}
+.Projects h2[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+.videosContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 95%;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.videoBox {
+    width: 30%;
+    margin: 15px;
+}
+.videoBox video {
+    width: 100%;
+}
+/* ---------------------- */
+.Projects .videoBox {
+    position: relative;
+    padding: 0;
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: center;
+    transform: scaleX(0);
+}
+.Projects .videoBox[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.Projects .videoBox:before {
+   content: ' ';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   transform-origin: center;
+   transition: 0.5s;
+}
+.Projects .videoBox[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+footer {
+    background: url('https://www.agdelta.com/wp-content/uploads/2018/06/website-parallax-background-C.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.HOMEFOOTER {
+    text-align: center;
+    margin: auto;
+    margin-left: 46%;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.HOMEFOOTER:hover {
+    color: blue;
+}
+.myContact {
+    padding-bottom: 100px;
+}
+.myInfo {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 80%;
+    font-size: 2rem;
+}
+.myQ {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.myQ q {
+    font-size: 3em;
+    text-align: center;
+}
+.bottomContact {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    justify-content: space-evenly;
+}
+fieldset {
+    width: 50%;
+    font-size: 2em;
+    margin: 5px;
+}
+fieldset legend {
+    text-align: center;
+}
+.social-logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.social-logo a {
+    width: 15%;
+    padding: 10px;
+}
+.social-logo a img {
+    width: 100%;
+}
+.left {
+    width: 20%;
+}
+.right {
+    width: 70%;
+}
+
+/* -----------------------------------------------------------------ME----------------------- */
+.myInfoContainer {
+
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+.myInfoContainer[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.myInfoContainer:before {
+   content: ' ';
+   background-color: #ffeb3b;
+   transform-origin: right;
+   transition: 0.5s;
+}
+.myInfoContainer[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+.social {
+
+    display: inline-block;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+}
+.social[data-scroll="in"]
+{
+    transform: scaleX(1);
+}
+.social:before {
+   content: ' ';
+   background-color: #ffeb3b;
+   transform-origin: left;
+   transition: 0.5s;
+}
+.social[data-scroll="in"]:before
+{
+    transform: scaleX(0);
+    transition-delay: 0.5s;
+}
+
+@media all and (max-width: 480px) { 
+    nav {
+        width: 100%;
+        font-size: 24px;
+    }
+    .headerBody {
+        display: flex;
+        flex-direction: column;
+    }
+    #Header {
+        height: auto;
+    }
+    .me {
+        width: 50%;
+        margin: auto;
+    }
+    section .skills{
+        padding: 10px;
+        height: auto;
+    }
+    .skills {
+        width: 100%;
+    }
+    .skills h2 {
+
+        width: 100%;
+        margin: auto;
+        font-size: 3em;
+    }
+    .skillContainer {
+        width: 110%;
+        display: flex;
+    }
+    .skillLogo {
+        width: 40%;
+        margin: 10px;
+        padding: 10px;
+    }
+    .skillLogo img {
+        width: 100%;
+    }
+    section .skillContainer {
+        width: 100%;
+    }
+
+    .Projects h2 {
+        width: 100%;
+        margin: auto;
+    }
+    .videosContainer {
+        width: 100%;
+    }
+    .videoBox {
+        width: 80%;
+    }
+    .videoBox h3 {
+        font-size: 24px;
+    }
+    Section .Projects {
+        height: auto;
+    }
+    .myContact {
+        font-size: 9px;
+    }
+    .bottomContact {
+        width: 100%;
+        flex-direction: column;
+    }
+    .myInfoContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .myInfo {
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        margin: auto;
+        width: 100%;
+    }
+    .left {
+        margin: 0;
+        padding: 0;
+        width: 30%;
+    }
+    .right {
+        margin: 0;
+        padding: 0;
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .social {
+        width: 100%;
+        margin: auto;
+    }
+    .HOMEFOOTER {
+        margin: auto;
+    }
+    
+}
+@media all and (min-width: 480px) and (max-width: 1280px) { 
+    nav {
+        width: 100%;
+    }
+    section .skills {
+        width: 100%;
+        height: auto;
+    }
+    .skills h2 {
+        width: 100%;
+        margin: auto;
+    }
+    .skillLogo {
+        width: 20%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .skillLogo figcaption p {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .videoBox {
+        width: 45%;
+    }
+    .myQ {
+        margin: auto;
+    }
+    .bottomContact {
+        flex-direction: column;
+        margin: auto;
+    }
+    .myInfoContainer, .social {
+        width: 100%;
+    }
+}
